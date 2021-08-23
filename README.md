@@ -1,5 +1,5 @@
 # online-shop
-1) Структура базы интернет-магазина tables.sql
+1) Структура базы интернет-магазина tables.sql для PostgreSQL
  
 2) Запросы queries.sql
 
