@@ -1,30 +1,34 @@
 # online-shop
-1) Структура базы интернет-магазина tables.sql для PostgreSQL
- 
-2) Запросы queries.sql
+1) The structure of the internet store database tables.sql for PostgreSQL.
 
-- Запрос 1
+2) Queries queries.sql:
+
+- Query 1
 ```
-Цель: Список клиентов (ФИО)
-Условие: совершали заказы в период с 01.01.18 по 02.01.18
-В заказах был товар X, производителя Y
+Goal: List of customers (full name).
+Condition: Made orders during the period from 01.01.18 to 02.01.18.
+Orders contained product X from manufacturer Y.
+
 ``` 
-- Запрос 2
+- Query 2
 ```
-Цель: Список заказов от клиентов с именем Иван
-Условие: Совершали заказы в период с 01.01.18 по 02.01.18
-Сумма заказов от клиентов за период больше или равно 10 000 руб.
-В заказах не было товара X, но был товар Y
+Goal: List of orders from customers with the name Ivan.
+Condition: Made orders during the period from 01.01.18 to 02.01.18.
+Total amount of orders from customers during the period is greater than or equal to 10,000 rubles.
+Orders did not contain product X, but contained product Y.
+
 ``` 
-- Запрос 3
+- Query 3
 ```
-Цель: Список клиентов, не совершающих покупки на протяжении 6 месяцев
-Условия: Клиенты, которые были с оборотом выше среднего в аналогичном периоде прошлого года
-Данные клиенты из топ-3 регионов по продажам
+Goal: List of customers who have not made purchases for 6 months.
+Conditions: Customers who had above-average turnover in a similar period last year.
+These customers are from the top 3 regions in terms of sales.
+
 ```
-- Запрос 4
+- Query 4
 ```
-Цель: Список заказов с условно проблемными доставками
-Условие: Доставка была сделана на этой неделе водителями с плохими откликами за текущий месяц от клиентов
-Данные клиенты - высокодоходные за все время работы
+Goal: List of orders with conditionally problematic deliveries.
+Condition: Delivery was made this week by drivers with poor feedback from customers for the current month.
+These customers are high-income for the entire period of operation.
+
 ```
